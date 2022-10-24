@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "6aa6855d-ac0e-47c6-9789-c9ed28e21b5c",
+		"name": "Prueba Tacktec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar todos los Alumnos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tracktec/api-alumno/listarAlumnos"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Alumno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tracktec/api-alumno/eliminarAlumno/2"
+			},
+			"response": []
+		},
+		{
+			"name": "buscar Alumno",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tracktec/api-alumno/buscarAlumno/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Alumno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Elias 1\",\r\n    \"apaterno\": \"Sharon 1\",\r\n    \"amaterno\": \"Jirikils 1\",\r\n    \"direccion\": \"asdkjasdlkjasdk\",\r\n    \"telefono\": \"9999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tracktec/api-alumno/actualizarAlumno/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Alumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Elias\",\r\n    \"apaterno\": \"Sharon\",\r\n    \"amaterno\": \"Jirikils\",\r\n    \"direccion\": \"asdkjasdlkjasdk\",\r\n    \"telefono\": \"9999999\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tracktec/api-alumno/guardarAlumno"
+			},
+			"response": []
+		}
+	]
+}
